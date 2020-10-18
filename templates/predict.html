@@ -1,0 +1,249 @@
+
+<html>
+<head>
+
+<title>Get a Quick self check-up</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="csstyles/bootstrap.min.css">
+<!-- CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+<!-- jQuery and JS bundle w/ Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</head>
+
+
+<style>
+    #result {
+        width: 350px;
+        height: 300px;
+    }
+
+    li {
+        font-weight: bold;
+        font-size: 27px;
+    }
+
+    .gg {
+        font-weight: 200;
+        font-size: 20px;
+    }
+
+    .heading {
+        font-family: cursive;
+        font-size: 40px;
+        color: black;
+    }
+
+    .fixi {
+        box-shadow: 0px 1px 1px gray;
+    }
+
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+</style>
+
+
+
+
+
+<style>
+    #result{
+        width: 350px;
+        height: 300px;
+    }
+    </style>
+
+
+<body>
+  <div class="fixi">
+
+
+
+
+
+      <nav class="navbar navbar-expand-lg">
+          <pre class="navbar-brand mt-2 heading"><h3>SNOOZzz&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3></pre>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item active gg">
+                  <a class="nav-link text-dark btn-success btn btn-sm " href="http://127.0.0.1:5000/Lets_check_your_calorie"><b>Count Calories </b><span class="sr-only">(current)</span></a>
+              </li>
+
+
+          </ul>
+      </div>
+  </nav>
+
+
+
+  <div class="row mt-4 ml-4">
+      <div class="col-md-3 offset-md-2">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12">
+
+   <div>
+     <style>
+     h6
+     {
+       text-align: center;
+     }
+     </style>
+      <h6>Let's Check how many hours you sleep</h6>
+
+
+
+
+
+    <form action = "{{ url_for ('predict')}}"method = "post">
+    <center>  <input type ="text"  align ="center" name ="OTT" placeholder ="hours spent on OTT" required="required" /></center>
+      <br>
+      <br>
+    <center>
+      <button type ="submit" align ="center" class="btn btn-primary btn-block btn-large"> predict </button>
+    </center>
+    </form>
+
+    <br>
+    <br>
+{{  output  }}
+
+</div>
+
+
+                    </div>
+                </div>
+                <!-- <div class="row">
+                    <div class="col-md-12"><br><br><br><br>
+                        <textarea disabled id="result">Result</textarea>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="col-md-6">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://github.com/AkshayAnil1080/haccelarate_Debuggers/blob/master/pictures/netflix.png?raw=true" class="d-block w-100" height ="500" alt=".sasdasfsfdfssfasfa..">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://github.com/AkshayAnil1080/haccelarate_Debuggers/blob/master/pictures/sleep...jpg?raw=true" class="d-block w-100" height ="500" alt="..sjdajd." height="550">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://github.com/AkshayAnil1080/haccelarate_Debuggers/blob/master/pictures/zz....jpg?raw=true" class="d-block w-100" height ="500" alt="..dsdad.">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://github.com/AkshayAnil1080/haccelarate_Debuggers/blob/master/pictures/laptop.jpeg?raw=true" class="d-block w-100" height ="500" alt=".adasfsf..">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <style>
+    h2{
+      text-align: center;
+    }
+    </style>
+
+
+
+    <div class="row ml-4 mt-4">
+        <div class="col-md-4">
+            <center><h2><b>How Much Sleep Do We Really Need?</b></h2></center>
+        </div>
+        <div class="col-md-5">
+            <center><b>What happens if you don’t sleep?</b></center>
+        </div>
+    </div>
+    <div class="row ml-4">
+        <div class="col-md-4">
+            <center>Scientific research makes clear that sleep is essential at any age. Sleep powers the mind, restores the body, and fortifies virtually every system in the body. The National Sleep Foundation guidelines serve as a rule-of-thumb for how much sleep children and adults need while acknowledging that the ideal amount of sleep can vary from person to person.
+
+                For that reason, the guidelines list a range of hours for each age group. The recommendations also acknowledge that, for some people with unique circumstances, there’s some wiggle room on either side of the range for “acceptable,” though still not optimal, amount of sleep.
+
+                Deciding how much sleep you need means considering your overall health, daily activities, and typical sleep patterns.</center>
+        </div>
+        <div class="col-md-5">
+
+            <ol>
+                <li>You get sick</li>Losing sleep can impair your body’s ability to fight off illness. This makes it easier to get sick.
+
+                Researchers even uncovered a reciprocal relationship between sleep and your immune system. You may lose additional sleep while your body fights off a bug if you get sick and haven’t had enough shut-eye.
+
+2
+                <li>Your heart suffers</li>
+                Both short sleep durations (less than 5 hours per night) and long sleep durations (9 or more hours per night) have been shown to have a negative impact on heart health, according to an analysis published in the European Heart Journal.
+
+                <li>Your cancer risk increases</li>
+                Shortened sleep is associated with higher rates of breast cancer, colorectal cancer, and prostate cancer, according to the AASM’s sleep statement.
+
+                Overnight shift workers may take the brunt of this burden. The good news is that both men and women who slept 7 or more hours per night had the best mortality rates in the group.
+            </ol>
+
+        </div>
+        <div class="col-md-3">
+            <img src="https://github.com/AkshayAnil1080/haccelarate_Debuggers/blob/master/pictures/WhatsApp%20Image%202020-10-18%20at%204.45.41%20PM.jpeg?raw=true" ss="img-fluid" alt="Responsive image" width="300" height="300">
+        </div>
+    </div>
+
+
+</body>
+
+
+
+
+
+
+</body>
+</html>
